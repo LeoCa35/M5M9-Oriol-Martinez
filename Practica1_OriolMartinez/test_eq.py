@@ -22,11 +22,12 @@ class TestEquacio(unittest.TestCase):
 
     def test_caracterErroni(self):
         eq = EqPrimG("2x - p = 7")
-        self.assertEqual(eq.calcula(),"l'equacio conte caracter no calculables: ")
+        self.assertEqual(eq.calcula(),"l'equacio te un caracter no calculable o no segueix el format: ax + b = c")
 
     def test_fromat_erroni(self):
         eq = EqPrimG("3 - 2x = 7")
-        self.assertEqual(eq.calcula(),"l'equacio no segueix el format: ax + b = c")
+        self.assertEqual(eq.calcula(),"l'equacio te un caracter no calculable o no segueix el format: ax + b = c"
+        )
 
 
 

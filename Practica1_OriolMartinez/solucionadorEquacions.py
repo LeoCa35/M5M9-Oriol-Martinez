@@ -13,7 +13,7 @@ class EqPrimG:
             part3 = float(self.equacion[2])
             part4 = float(self.equacion[4])
         except: 
-            return("l'equacio no segueix el format: ax + b = c")
+            return("l'equacio te un caracter no calculable o no segueix el format: ax + b = c")
         part2 = part12[1]
         operador = self.equacion[1]
         
