@@ -23,17 +23,16 @@ class EqPrimG:
         
         if operador == "+":
             calculo = (part4 - part3) / part1
-            print ("resultado de",self.equacion," = ",calculo)
+            return print ("resultado de",self.equacion," = ",calculo)
 
             
         elif operador == "-":
             calculo = (part4 + part3) / part1
-            print ("resultado de",self.equacion," = ",calculo)
+            return print ("resultado de",self.equacion," = ",calculo)
 
         else: 
-            print("sintaxis erronea")
+           return print("sintaxis erronea")
             
       
 
-eq = EqPrimG("-2x * 0 = -7")
-eq.calcula()
+
