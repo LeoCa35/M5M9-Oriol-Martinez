@@ -8,11 +8,15 @@ class EqPrimG:
 
     def calcula(self):
         part12 = self.equacion[0]
-        part1 = int(part12[:-1])
+        try:
+            part1 = float(part12[:-1])
+            part3 = float(self.equacion[2])
+            part4 = float(self.equacion[4])
+        except: 
+            return("l'equacio no segueix el format: ax + b = c")
         part2 = part12[1]
         operador = self.equacion[1]
-        part3 = int(self.equacion[2])
-        part4 = int(self.equacion[4])
+        
         #print ("part1=",part1)
         #print ("part2=",part2)
         #print ("operator=",operador)
@@ -23,16 +27,16 @@ class EqPrimG:
         
         if operador == "+":
             calculo = (part4 - part3) / part1
-            return print ("resultado de",self.equacion," = ",calculo)
+            return calculo
 
             
         elif operador == "-":
             calculo = (part4 + part3) / part1
-            return print ("resultado de",self.equacion," = ",calculo)
+            return calculo
 
         else: 
-           return print("sintaxis erronea")
+           return ("Operador no valid: ")
             
-      
+        
 
 
